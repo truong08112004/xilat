@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="deck">
+        <img src="Cards/cardBack_blue4.png" alt="" />
+        <button onclick="dealCards()">Deal Cards</button>
+        <button onclick="shuffled()">Shuffled Deck</button>
+        <button onclick="refreshPage()">Reset Game</button>
+      </div>
+      <div class="board">
+        <div class="dealer"></div>
+        <div class="btnwrap">
+          <button onclick="drawcard(playerHand)">Draw</button>
+          <button onclick="finish()">Stop</button>
+          <div class="playerscore"></div>
+        </div>
+        <div class="player"></div>
+      </div>
+      <div class="ai">
+        <div class="chatbox">
+          <h2 class="chat">Welcome to wb88</h2>
+          <img src="image/chat.png" alt="">
+        </div>
+        <img src="image/toothless.gif" alt="">
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
